@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease;
+}
+
+.menu a:hover{
+    color: rgb(148, 142, 142);
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/steel-ball-run.jpg); /*pra tela partes*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+}
+
+.texto_banner {
+    flex-basis: 45%; 
+    max-width: 45%;
+    margin-left: 5%; 
+    text-align: left; 
+}
+
+.texto_banner h1, .texto_banner h2, .texto_banner p{
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    flex-basis: 30%;
+    padding: 1.5rem;  
+}
+
+.texto_banner a, .produto a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(207, 47, 47);
+    color: #fff;
+    margin-left: 5%;
+}
+#grid_partes{
+    background-image: url(../img/footer.jpg);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid div {
+    background-color: #fff;
+    text-align: center;
+    padding: 2px;
+}
+
+.partes img{ 
+    width: 100%;
+    height: 360px;
+}
+
+.partes strong{
+    color: rgb(207, 47, 47);
+}
+
+footer{
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape_texto{
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;  
+}
+
+footer ul li a{
+    color: blue;
+}
+
+/* //////////////////// INDEXXXX --------------------- */
+
+#banner_principal{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner_principal.png);
+}
+
+#jojo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.jojo_texto{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.jojo_imagem img{
+    width: 100%;
+}
+
+.img_manga{
+    background-image: url(../img/manga_cena.jpeg);
+    height: 20vh;
+}
+
+#premios{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.imagem_premio img{ 
+    width: 150px;
+}
+
+
+
+/* ------------------ PERSONAGENS ------------------ */
+#banner_personagens{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/personagens.jpg);
+}
+.personagem{
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 50px;
+}
+
+.foto_personagem img{
+    border-radius: 20px;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.texto_personagem{
+    max-width: 50%;
+    margin-left: 5%; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.titulo_personagem{
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.linha-divisoria {
+    display: block;
+    border: none;          
+    height: 3px;           
+    background-color: #ff004f; 
+    margin: 40px auto;     
+    width: 80px;          
+    clear: both;  
+}
+
+
+/* /////////////////////// Produtos //////////////////// */
+
+#produtos{
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+
+}
+.produto{
+    border-radius: 20px;
+    box-shadow: 0,0,0,0.4 #000;
+}
+
+.produto_imagem img{
+    width: 200px;
+    height: 250px;
+}
+
+.produto_desc p{
+    font-size: 1.5rem;
+}
+
+.link_compra{
+    margin: 10px;
+}
+
+#banner_produtos{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/banner_prod.png);
+}
+
+
+
+@media (min-width:200px) and (max-width: 768px){
+    .banner{
+        width: 100% auto;
+        height: auto;
+        min-height: 55vh;
+        background-image: url(../img/sbr_clrr_suave.jpg);
+    }
+    .texto_banner{
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu a{
+        font-size: 1rem;
+    }
+
+    .partes{
+        margin-top: 10px;
+    }
+
+    /* ////////////////produto/////////////// */
+
+    #produtos, #jojo, #premios{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* /////////////////// index /////////////////// */
+    .jojo_imagem{
+        width: 100%;
+    }
+
+    .premios{
+        margin-top: 20px;
+    }
+}
