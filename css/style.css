@@ -185,6 +185,7 @@ footer ul li a{
 .titulo_personagem{
     font-size: 2.5rem;
     margin-top: 40px;
+    margin-bottom: px;
 }
 
 .linha-divisoria {
@@ -245,6 +246,12 @@ footer ul li a{
         margin-left: 0;
         text-align: center;
         font-size: 1rem;
+    }
+
+    .texto_personagem{
+        max-width: 80%;
+        padding: 10%;
+          
     }
 
     .texto_personagem{
