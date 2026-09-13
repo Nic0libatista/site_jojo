@@ -194,7 +194,7 @@ footer ul li a{
     height: 3px;           
     background-color: #ff004f; 
     margin: 40px auto;     
-    width: 80px;          
+    width: 30%;          
     clear: both;  
 }
 
@@ -258,6 +258,9 @@ footer ul li a{
         font-size: 21px;
     }
 
+    .linha-divisoria {    
+    width: 80px;          
+}
     .menu a{
         font-size: 1rem;
     }
