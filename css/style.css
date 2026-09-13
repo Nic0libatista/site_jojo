@@ -126,6 +126,10 @@ footer ul li a{
     font-size: 1.5rem;
     margin: 20px;
 }
+
+.jojo_texto h2{
+    margin-bottom: 10px;
+}
 .jojo_imagem img{
     width: 100%;
 }
